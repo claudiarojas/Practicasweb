@@ -1,0 +1,71 @@
+body {
+  background-color: darkblue;
+}
+.contenedor {
+  background-color: whitesmoke;
+}
+ul {
+  background-color: yellow;
+  padding: 15px;
+  list-style-type: square;
+}
+ul li {
+  background-color: crimson;
+  color: white;
+  margin: 3px;
+}
+ul li ul {
+  background-color: cyan;
+  padding: 5px;
+  list-style-type: circle;
+  list-style-position: inside;
+}
+ul li ul li {
+  background-color: darkmagenta;
+  margin: 3px;
+  list-style-type: disc;
+}
+ul li ul li ul {
+  background-color: darkred;
+  padding: 5px;
+  list-style-type: none;
+}
+ul li ul li ul li {
+  background-color: darksalmon;
+  margin: 3px;
+  list-style-type: none;
+}
+/*ordenadas*/
+ol {
+  background-color: darksalmon;
+  padding: 15px;
+  list-style-type: decimal;
+  list-style-position: inside;
+}
+ol li {
+  background-color: skyblue;
+  margin: 3px;
+  color: yellow;
+}
+ol li ol {
+  background-color: springgreen;
+  padding: 5px;
+  list-style-position: inside;
+  list-style-type: lower-roman;
+}
+ol li ol li {
+  background-color: tomato;
+  margin: 3px;
+  list-style-position: inside;
+}
+ol li ol li ol {
+  background-color: rgb(11, 8, 189);
+  padding: 5px;
+
+  list-style-type: none;
+}
+ol li ol li ol li {
+  background-color: darksalmon;
+  margin: 3px;
+  list-style-type: none;
+}

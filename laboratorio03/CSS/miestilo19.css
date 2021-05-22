@@ -1,0 +1,36 @@
+.visible {
+  background-color: salmon;
+  width: 300px;
+  height: 200px;
+  border: 2px dashed red;
+  overflow: visible;
+}
+.oculto {
+  background-color: salmon;
+  width: 300px;
+  height: 200px;
+  border: 2px dashed green;
+  overflow: hidden;
+}
+.barra {
+  background-color: salmon;
+  width: 300px;
+  height: 200px;
+  border: 2px dashed rgb(27, 183, 245);
+  overflow: scroll;
+}
+.automatico {
+  background-color: salmon;
+  width: 300px;
+  height: 200px;
+  border: 2px dashed rgb(250, 12, 103);
+  overflow: auto;
+}
+.doble {
+  background-color: salmon;
+  width: 300px;
+  height: 200px;
+  border: 2px dashed rgb(231, 247, 17);
+  overflow-x: scroll;
+  overflow-y: hidden;
+}

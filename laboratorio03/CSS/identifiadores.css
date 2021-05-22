@@ -1,0 +1,24 @@
+#Titulo {
+  color: violet;
+  font-style: italic;
+}
+#barra {
+  background-color: darkblue;
+  height: 20px;
+}
+#Subtitulospares {
+  color: darkgreen;
+  font-weight: bolder;
+}
+#parrafospares {
+  color: darksalmon;
+  font-style: italic;
+}
+#subtitulosimpares {
+  color: darkturquoise;
+  font-weight: bolder;
+}
+#parrafosimpares {
+  color: darkviolet;
+  font-weight: bolder;
+}

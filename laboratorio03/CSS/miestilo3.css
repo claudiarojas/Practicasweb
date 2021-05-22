@@ -1,0 +1,30 @@
+.titulo {
+  color: deeppink;
+  font-style: italic;
+}
+.barra {
+  background-color: forestgreen;
+  height: 10px;
+}
+
+.subtitulosparrafos {
+  color: rgb(15, 223, 223);
+  font-weight: bolder;
+}
+.subtitulolista {
+  color: darkorchid;
+  font-style: italic;
+}
+p {
+  color: darkred;
+  font-weight: bolder;
+  font-style: italic;
+}
+h3 {
+  color: darkslateblue;
+  font-weight: bolder;
+}
+.menu {
+  color: darkturquoise;
+  font-weight: bolder;
+}

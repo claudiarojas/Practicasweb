@@ -1,0 +1,73 @@
+body {
+  background-color: blue;
+}
+.contenedor {
+  background-color: rgb(236, 89, 138);
+}
+@font-face {
+  font-size: "lobster";
+  src: url(/fonts/Lobster-Regular.ttf);
+}
+.sombra {
+  text-shadow: 3px 3px rgb(173, 241, 12);
+  font-family: "lobster";
+  font-size: 20px;
+}
+.borde1 {
+  border-style: dotted;
+  font-size: 30px;
+}
+@font-face {
+  font-family: "Bitter";
+  src: url(/fonts/Bitter-Italic-VariableFont_wght.ttf);
+}
+.parrafo1 {
+  font-family: "Bitter";
+  font-size: 20px;
+}
+@import url(https://fonts.googleapis.com/css2?family=Pacifico&family=Pangolin&display=swap);
+.parrafo2 {
+  font-family: "Pacifico", cursive;
+  font-family: "Pangolin", cursive;
+  font-size: 20px;
+  font-weight: bolder;
+}
+@import url(https://fonts.googleapis.com/css2?family=Pangolin&display=swap);
+h1 {
+  font-family: "Pangolin", cursive;
+  color: aquamarine;
+}
+h2 {
+  font-weight: lighter;
+  color: antiquewhite;
+  font-size: 40px;
+}
+ul {
+  background-color: darkgoldenrod;
+  padding: 15px;
+  list-style-type: circle;
+  list-style-position: inside;
+  font-size: 20px;
+}
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap);
+ul li {
+  background-color: darksalmon;
+  padding: 15px;
+  font-family: "Dancing Script", cursive;
+  margin: 3px;
+  border-style: solid;
+  color: blueviolet;
+}
+ol {
+  background-color: yellowgreen;
+  font-size: 20px;
+}
+ol li {
+  background-color: rgb(11, 236, 218);
+  padding: 15px;
+  border-style: solid;
+  color: brown;
+  list-style-type: square;
+  list-style-position: inside;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}

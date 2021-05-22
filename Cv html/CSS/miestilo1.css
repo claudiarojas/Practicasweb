@@ -1,0 +1,58 @@
+.titulo {
+  color: teal;
+  font-style: unset;
+}
+.subtitulosparrafos {
+  color: tomato;
+  font-weight: bolder;
+}
+p {
+  color: darkorange;
+  font-style: initial;
+}
+#subtitulodatos {
+  color: gold;
+}
+#subtituloacademica {
+  color: green;
+}
+#menudatos {
+  color: rgb(11, 113, 230);
+}
+#menuacademica {
+  color: purple;
+}
+#subtitulolaboral {
+  color: darkseagreen;
+}
+#menulaboral {
+  color: deeppink;
+}
+.contenido {
+  background-color: dodgerblue;
+}
+.parrafoimagen1 {
+  background-image: url("/img/bobesponja1.jpg");
+}
+.parrafoimagen2 {
+  background-image: url("/img/sherk.jpg");
+}
+.parrafotransparencia {
+  background-color: firebrick;
+  opacity: 60%;
+  color: ghostwhite;
+}
+.parrafotransparencia2 {
+  background-color: rgb(216, 159, 238);
+  opacity: 60%;
+  color: ghostwhite;
+}
+.contenidoperfil {
+  background-color: grey;
+}
+.caja {
+  border-style: solid;
+  border-width: 8px;
+  border-color: chocolate;
+  padding: 10px;
+}

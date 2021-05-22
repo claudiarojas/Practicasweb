@@ -1,0 +1,26 @@
+.contendor {
+  width: 980px;
+  height: 800px;
+  background-color: peru;
+  margin: auto;
+}
+.cabecera {
+  width: 980px;
+  height: 250px;
+  background-color: #2b1ad8;
+}
+.menu {
+  width: 980px;
+  height: 98px;
+  background-color: #1bd2b3;
+}
+.contenido {
+  width: 980px;
+  height: 400px;
+  background-color: #d7de1a;
+}
+.pie {
+  width: 980px;
+  height: 70px;
+  background-color: #e013ef;
+}

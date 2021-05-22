@@ -1,0 +1,55 @@
+body {
+  background-color: darkslateblue;
+}
+.contenedor {
+  background-color: darkturquoise;
+}
+/*aplicamos un estilo para que la tabla ocupe el ancho */
+
+/*aplicamos el borde a la tabla*/
+/*quitarle el doble borde a la tabla*/
+/*agregamos relleno*/
+table {
+  width: 100%;
+  border: 3px solid rgb(243, 11, 224);
+  border-collapse: collapse;
+}
+table thead th,
+table tbody tr td {
+  border: 3px solid rgb(245, 99, 15);
+}
+/*Aumentamos la altura de los th*/
+/*alineamos al centro los valores del th*/
+th {
+  height: 45px;
+  text-align: center;
+  vertical-align: top;
+}
+/*agregamos un fondo y un color de la letra cuando pasamos por la fila*/
+table tbody tr:hover {
+  background-color: black;
+  color: white;
+}
+/*agregamos los estilos para la tabla */
+.tabla1 {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+.tabla1 td,
+.tabla1 th {
+  border: 1px solid gainsboro;
+  padding: 8px;
+}
+.tabla1 th {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: fuchsia;
+  color: antiquewhite;
+}
+
+.tabla1 tr:hover {
+  background-color: skyblue;
+  color: darkred;
+}

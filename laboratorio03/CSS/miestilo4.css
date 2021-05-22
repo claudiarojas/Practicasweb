@@ -1,0 +1,26 @@
+.contenedor {
+  background-color: blue;
+}
+.cabecera {
+  background-color: blueviolet;
+}
+.menu {
+  background-color: darkturquoise;
+}
+.contenido {
+  background-color: darkorange;
+}
+.pie {
+  background-color: darkred;
+}
+.body {
+  background-color: darkgray;
+}
+.parrafoimagen {
+  background-image: url("/img/foto1.png");
+}
+.parrafotransparencia {
+  background-color: blueviolet;
+  opacity: 75%;
+  color: whitesmoke;
+}
