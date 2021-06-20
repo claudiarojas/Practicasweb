@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-Parte3</title>
+    <script type="text/javascript">
+    // ejemplo1
+    // desarrollar una aplicacion que permita calcular el area de un triangulo si se sabe 
+    // que se debe ingresar su base y su altura , si el area del triangulo es mayor a 50 se mostrara un mensaje 
+    // indicando "Es un triangulo grande "  en caso contrario se mostrara un mensaje "Es un triangulo pequeño".
+
+    // Cuantas variables necesitas?
+    // 4
+    //que tipos de datos necesito?
+    //Real y texto 
+    //Cuales son las variables?
+    //alt, area, men,bas
+    //Que variables voy a leer?
+    //bas y alt
+
+    // definiciendo variables
+    var alt=0,bas=0,men="",area=0;
+    // capturando valores
+    bas=parseFloat(prompt("Ingrese la base del triangulo:"));
+    alt=parseFloat(prompt("Ingrese la altura del triangulo:"));
+    // Realizando operaciones
+    area=(bas*alt)/2;
+    // condicion
+    if(area>50){
+        men="Es un triangulo grande";
+        
+    } else{
+        men="Es un triangulo pequeño";
+    }
+    // mostrando resultado
+    alert("El area del triangulo es : "+area);
+    alert(men);
+    
+
+    // Ejemplo2
+    // desarrollar una aplicacion que permita calcular el total a pagar por una compra de un producto 
+    // si se sabe que debe ingresar el precio del producto y la cantidad que se va a comprar  
+    // Si el subtotal es mayor a 1000 se aplicara un descuento del 5% en caso contrario el descuento sera  
+    // del 2% si el cliente quiere factura se aplicara el 18% al subtotal para el igv en caso contrario con boleta no se aplicara nada  
+    // Mostrar todos los resultados
+    // Cuantas variables necesitas?
+    // 7
+    //que tipos de datos necesito?
+    //Real ,texto
+    //Cuales son las variables?
+    //pre, can, sb, des, igv, tot, com
+    //Que variables voy a leer?
+    //pre , can ,com
+    // Definiendo variables voy
+    var pre=0,can=0,sbt=0,des=0,igv=0,tot=0,com="";
+
+    // capturando valores 
+    pre=parseFloat(prompt("Ingrese el precio del producto"));
+    can=parseInt(prompt("Ingrese la cantidad a comprar"));
+    com=prompt("ingrese el tipo de comprobante [b]boleta o [f] factura" );
+    // Realizando operacion 
+
+    sbt=pre*can;
+    // condicion 
+    if(sbt>1000){
+        des=sbt*0.05;
+    }else{
+        des=sbt*0.02;
+    }
+    if(com=="f"){
+        igv=sbt*0.18;
+    }else{
+        igv=0
+    }
+    tot=sbt-des+igv;
+    // mostrando resultados
+    document.write("El subtotal es :"+sbt+'<br>');
+    document.write("El descuento es :"+des+'<br>');
+    document.write("El igv  es :"+igv+'<br>');
+    document.write("El total es :"+tot+'<br>');
+    document.write('<hr>');
+
+    
+    
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

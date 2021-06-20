@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript - Parte3</title>
+    <script type="text/javascript">
+    // ejemplo 1
+    // Desarrollar una aplicacion que te permita inigresar tu nombre y mostrar 
+    // un saludo 5 veces
+    // Cuantas variables necesitas?
+    // 2
+    //que tipos de datos necesito?
+    //texto y entero 
+    //Cuales son las variables?
+    //nom, cont
+    //Que variables voy a leer?
+    //nom
+    // definiendo variables
+    var nom="",cont=1;
+
+    nom=prompt("ingresa tu nombre :");
+    //While
+    while(cont<5){
+        document.write("Hola como estas "+nom+'<br>');
+        cont++
+    }
+    document.write('<hr>');
+    // do while
+    cont=0;
+    do{
+        document.write("Hola como estas "+nom+'<br>');
+        cont++
+    }while(cont<5);
+    document.write('<hr>')
+    // For
+    for(cont=0;cont<5;cont++){
+        document.write("Hola como estas "+nom+'<br>');
+    }
+    document.write('<hr>')
+    document.write('<hr>')
+    // Ejemplo 2
+    // desarrollar una aplicacion q te permite mostrar los n primeros
+    //  numeros naturales
+    // Cuantas variables necesitas?
+    // 2
+    //que tipos de datos necesito?
+    //entero
+    //Cuales son las variables?
+    //cont, can 
+    //Que variables voy a leer?
+    //can 
+    // definiendo variables
+    var cont=0, can=0;
+    // capturando valores
+    can=parseInt(prompt("Ingresa la cantidad de numeros"));
+
+    // while
+    while(cont<can){
+        document.write(cont+'<br>');
+        cont++
+    }
+    document.write('<hr>');
+    // do while
+    cont=0;
+    do{
+        document.write(cont+'<br>');
+        cont++;
+    }while(cont<can);
+    document.write('<hr>');
+    // for
+    for(cont=0;cont<can;cont++){
+        document.write(cont+'<br>');
+    }
+    document.write('<hr>');
+    document.write('<hr>');
+    
+    // ejmeplo 3
+    // Desarrollar una aplicacion que permita sumar los n primeros
+    // numeros naturales
+    
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

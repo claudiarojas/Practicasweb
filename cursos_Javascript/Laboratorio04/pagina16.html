@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-Parte4</title>
+    <script type="text/javascript">
+    
+    
+    //ejemplo2
+    // desarrollar una aplicacion  q permita calcular el sueldo final d eun trabajador
+    // si se sabe que el numero de horas trabajadas se ingresa y el costo 
+    // por horas trabajadas tambien se ingresa, adicional se calculara una bonificacion de acuerdo a la siguiente tabla
+    //Categoria        Bonificacion 
+    //   A                  3%
+    //   B                  5%
+    //   C                  7%
+    //   D                  9%   
+    // del 7% y un descuento del 5%.
+    // mostrar todos los resultados y utilizar formularios
+    // Cuantas variables necesitas?
+    // 6
+    //que tipos de datos necesito?
+    //Real
+    //Cuales son las variables?
+    //nh, ch,sb,bon,des,sf
+    //Que variables voy a leer?
+    // nh,ch
+    // declrando funcion 
+    function CalcularBasico (numh,cosh){
+        return mumh*cosh;
+    }
+    function ClaculaBonificacion(cate,sueb){
+        var b=0;
+        if (cate=="a"){
+            b=sueb*0,03;
+        }else if(cate=="b"){
+            b=sueb*0.05;
+        }else if(cate=="c"){
+            b=sueb*0.07;
+        }else if(cate=="d"){
+            b=sueb*0.09;
+        }
+        return b;
+
+    }
+    function CalcularDescuentos (sueb){
+        return sueb*0.05;
+    }
+    function CalcularFinal (sueb,boni,desc){
+        return sueb+boni-desc;
+    }
+    // creamos un procedimiento para calcular
+    function Calcular(){
+        // declaramos variables para los controles
+        var txtNh=document.getElementById("txtNh");
+        var txtCh=document.getElementById("txtCh");
+        var txtSb=document.getElementById("txtSb");
+        var rbA=document.getElementById("rbA");
+        var rbB=document.getElementById("rbB");
+        var rbC=document.getElementById("rbC");
+        var rbD=document.getElementById("rbD");
+        var chk
+        var txtBon=document.getElementById("txtBon");
+        var txtDes=document.getElementById("txtDes");
+        var txtSf=document.getElementById("txtSf");
+    }
+    </script>
+</head>
+<body>
+    <form action="">
+        <label for="txtNh">Numero de horas</label>
+        <input type="text" name="txtNh" id="txtNh">
+        <br>
+        <label for="txtCh">Costo por hora</label>
+        <input type="text" name="txtCh" id="txtCh">
+        <br>
+        <label for="txtSb">Sueldo Basico</label>
+        <input type="text" name="txtSb" id="txtSb">
+        <br>
+        <label for="">Categorias:</label>
+        <input type="radio" name="categoria" id="rbA">
+        <label for="rbA">A</label>
+        <input type="radio" name="categoria" id="rbB">
+        <label for="rbB">B</label>
+        <input type="radio" name="categoria" id="rbC">
+        <label for="rbC">C</label>
+        <input type="radio" name="categoria" id="rbD">
+        <label for="rbD">D</label>
+        <br>
+        <label for="txtBon">Bonificacion</label>
+        <input type="text" name="txtBon" id="txtBon">
+        <br>
+        <label for="txtDes">Descuento</label>
+        <input type="text" name="txtDes" id="txtDes">
+        <br>
+        <label for="txtSf">Sueldo Final</label>
+        <input type="text" name="txtSf" id="txtSf">
+        <br>
+        <input type="button" value="Calcular" id="btnCalcular" name="btnCalcular"
+        onclick="Calcular()">
+        <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+    </form>
+</body>
+</html>

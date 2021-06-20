@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript-Parte4</title>
+    <script type="text/javascript">
+
+    // ejemplo 3
+    // desarrollar una aplicacion que permita ingresar tu edad y  en base 
+    // a tu edad mostrar un mensaje "Eres mayor de edad " si tu edad es mayor o igual a 18,en caso contrario 
+    // mostrar un mensaje indicando "Eres menor de edad".
+    // Cuantas variables necesitas?
+    // 2
+    //que tipos de datos necesito?
+    //texto y entero
+    //Cuales son las variables?
+    //edad , men
+    //Que variables voy a leer?
+    // edad
+    
+    // declarando funciones
+    function MostrarMensaje(edad){
+        var men="";
+        if(edad>=18){
+            m="Eres mayor de edad";
+        }else{
+            m="Eres menor de edad";
+        }
+        return m;
+    }
+    // creamos un precedimiento para Mostrar el mensaje
+    function Mostrar(){
+        // declarando variables para los controles
+        var txtedad=document.getElementById("txtedad");
+        var txtmen=document.getElementById("txtmen");
+        // validando controles
+        if(txtedad.value==""){
+            alert("Ingresa tu edad");
+            txtedad.focus();
+        }else{
+            // declarandoe inicializando variables
+            var edad=0,men="";
+            // capturando valores
+            edad=parseFloat(txtedad.value);
+            // llamamos a la funcion para mostrar Mensaje
+            men=MostrarMensaje(edad);
+            // mostrar resultados
+            txtmen.value=men;
+        }
+    }
+    
+    
+    
+    </script>
+</head>
+<body>
+    <form action="">
+
+    <label for="txtedad">Edad</label>
+    <input type="text" name="txtedad" id="txtedad">
+    <br>
+    <label for="txtmen">Mensaje</label>
+    <input type="text" name="txtmen" id="txtmen">
+    <br>
+    <input type="button" value="Mostrar" id="btnMostrar" name="btnMostrar"
+    onclick="Mostrar()">
+    <input type="reset" value="Limpiar" id="btnLimpiar" name="btnLimpiar">
+    
+        
+
+
+    </form>
+</body>
+</html>
