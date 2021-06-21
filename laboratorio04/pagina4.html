@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript parte 1</title>
+    <script type="text/javascript">
+    // operaciones
+    // Calculos aritmeticos
+    //+-->suma
+    //- --> resta  
+    //* -->multiplicacion
+    // / -->division  
+
+    // Ejemplo 1
+    // Desarrollar una aplicacion que permita calcular la suma de 2 numeros
+    //los numeros son 6 y 7
+    // Cuantas variables necesito?
+    //3 (Enteros)
+    //declarando variables
+    var numero1;
+    var num2;
+    var sum;
+    //inicializando variables
+    numero1=0;
+    num_2=0;
+    aum=0;
+    //asignar valores 
+    numero1=6;
+    num_2=7;
+    //realizamos operaciones
+    sum=numero1+num_2;
+    //mostrar valores 
+    alert("La suma es: "+sum);
+
+
+    document.write("La suma  es: "+sum+'<br>');
+
+    document.write("<hr>")
+
+
+    // Ejemplo 2
+    // Desarrollar una aplicacion que permita calcular las notas y el promedio 
+    //las notas son 18 ,17,13,15
+    // Cuantas variables necesito?
+    //5 (real)
+    var n1;
+    var n2;
+    var n3;
+    var n4;
+    var prom;
+
+    n1=0;
+    n2=0;
+    n3=0;
+    n4=0;
+    prom=0;
+
+    //asignar valores
+    n1=18;
+    n2=17;
+    n3=13;
+    n4=15;
+    //Realizando valores
+    prom=(n1+n2+n3+n4)/4;
+    //mostrando variables
+    alert("El promedio  es: "+prom);
+
+    document.write("El promedio es: "+prom+'<br>');
+    
+    document.write("<hr>");
+    
+
+    // Ejemplo 3
+    // Desarrollar una aplicacion que permite mostrar un mensaje con mi nombre
+    //se sabe que el nombre es Claudia
+    // Cuantas variables necesito?
+    //1 (texto)
+    var nom;
+    
+    nom="";
+    
+    nom="Claudia";
+    
+
+    alert("Hola como estas : "+nom+" espero que muy bien ");
+    document.write('Hola como estas '+nom+' espero que muy bien' );
+    document.write("<hr>")
+    
+
+    //Ejemplo4
+    //Desarrollar una aplicacion que permite calcular e sueldo final de un trabajador
+    //se sabe q su sueldo basico es de 1000 soles y recibe bonificacion de 7%
+    // y se aplica un descuento del 4%.Mostrar todos los valores 
+    //Real
+    //Cuantas variables necesito?
+    //4
+    var sb;
+    var boni;
+    var desc;
+    var sf;
+
+
+    sb=0;
+    boni=0;
+    desc=0;
+    sf=0;
+
+    sb=1000;
+    //Realizando operacion
+    boni=sb*0.07;
+    desc=sb*0.04;
+    sf=sb+boni-desc;
+    //mostrando resultado
+    alert("El sueldo basico es: "+sb);
+    alert("La bonificacion es: "+boni);
+    alert("el descuento es: "+desc);
+    alert("El sueldo final es: "+sf);
+
+    document.write('El sueldo basico es: '+sb+"<br>");
+    document.write("la bonificacion es: "+boni+"<br>");
+    document.write("el descuento es: "+desc+"<br>");
+
+    document.write("el sueldo final  es: "+sf+"<br>");
+    document.write("<hr>");
+//Ejemplo5
+//Desarrollar una aplicacion que permita calcular el total a pagar 
+//si se sabe que la cantidad que se compra es de 10 y e precio del producto es 125.80 y ademas se debe calcular el igv que es el 18% del subtotal, mostrar todos los resutados 
+//cantidad de variables
+//5
+//Real
+var can;
+var pre;
+var igv;
+var sbt;
+var total;
+//asignar valores
+can=10;
+pre=125.80;
+// realizando operacion
+sbt=can*pre
+igv=sbt*0.18;
+total=sbt+igv;
+
+//mostrando resulyados 
+alert("El subtotal es: "+sbt);
+alert("El igv es: "+igv);
+alert("El total es: "+total);
+
+document.write("El subtotal es: "+sbt+'<br>');
+document.write("El igv es: "+igv+'<br>');
+document.write("El total es: "+total+'<br>');
+document.write("<hr>");
+document.write("<a href='index.html'>Regresar</a><br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
